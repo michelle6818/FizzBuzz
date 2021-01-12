@@ -3,8 +3,6 @@
 document.getElementById("fizzButton").addEventListener("click", function(){
     let num1 = document.getElementById("input1").value;
     let num2 = document.getElementById("input2").value;
-
-    
         runTheNumbers(num1, num2);
 }) 
 
@@ -15,7 +13,7 @@ document.getElementById("fizzButton").addEventListener("click", function(){
 
  function runTheNumbers(num1, num2){
     let solution = document.getElementById("result")
-
+    let output = "";
     for (let loop = num1; loop <= num2; loop++) {
         let specialValue1 = loop % 3;
         let specialValue2 = loop % 5;
@@ -23,21 +21,22 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     if (specialValue1 == 0 && specialValue2 == 0) 
     {
          
-        solution.innerHTML = "FizzBuzz!";
+        output += `<span class="fizzBuzz">FizzBuzz! </span>`;
     }
     else if (specialValue1 == 0)
     {
-        solution.innerHTML = "Fizz!";
+        output += `<span class= "fizz">Fizz! </span>`;
     }
-    else if (specialValue2 = 0)
+    else if (specialValue2 == 0)
     {
-        solution.innerHTML = "Buzz!";
+        output += `<span class= "buzz">Buzz! </span>`;
     }
     else 
     {
         solution.innerHTML += loop;
     }
-}
+    solution.innerHTML = output;
+    }
 };
 
 

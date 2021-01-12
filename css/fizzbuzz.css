@@ -1,3 +1,14 @@
 .btnWide{
     width: 100%;
 }
+
+.fizz {
+    color: rgb(17, 92, 153);
+}
+.buzz {
+    color: rgb(153, 17, 40);
+}
+
+.fizzbuzz {
+    color: rgb(83, 153, 17);
+}
