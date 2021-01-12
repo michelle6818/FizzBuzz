@@ -14,7 +14,7 @@ document.getElementById("fizzButton").addEventListener("click", function(){
  function runTheNumbers(num1, num2){
     let solution = document.getElementById("result")
     let output = "";
-    for (let loop = num1; loop <= num2; loop++) {
+    for (let loop = 1; loop <= num2; loop++) {
         let specialValue1 = loop % 3;
         let specialValue2 = loop % 5;
         // let specialValue3 = loop % 15;
@@ -35,7 +35,7 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     {
         solution.innerHTML += loop;
     }
-    solution.innerHTML = output;
+    solution.innerHTML += output;
     }
 };
 

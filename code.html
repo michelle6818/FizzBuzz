@@ -56,22 +56,22 @@
 function runTheNumbers(num1, num2){
     let solution = document.getElementById("result")
     let output = "";
-        for (let loop = num1; loop <= num2; loop++) {
+        for (let loop = 1; loop <= num2; loop++) {
             let specialValue1 = loop % 3;
             let specialValue2 = loop % 5;
                 // let specialValue3 = loop % 15;
             if (specialValue1 == 0 && specialValue2 == 0) 
             {
                  
-                output += `<span class="fizzBuzz">FizzBuzz!</span>`;
+                output += `<span class="fizzBuzz">FizzBuzz! </span>`;
             }
             else if (specialValue1 == 0)
             {
-                solution.innerHTML = "Fizz!";
+                output += `<span class= "fizz">Fizz! </span>`;
             }
             else if (specialValue2 == 0)
             {
-                solution.innerHTML = "Buzz!";
+                output += `<span class= "buzz">Buzz! </span>`;
             }
             else 
             {
