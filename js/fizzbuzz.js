@@ -3,24 +3,55 @@
 document.getElementById("fizzButton").addEventListener("click", function(){
     let num1 = document.getElementById("input1").value;
     let num2 = document.getElementById("input2").value;
-    if(num1 > num2){
-        alert("Number 1 must be less than Number 2");
-     } else {
-         runTheNumbers(num1, num2)
-     }
-});
+
+    
+        runTheNumbers(num1, num2);
+}) 
 
 // This is the named function, it will only run when something else calls it
-function runTheNumbers(num1, num2){
+        // loop = 1 var specialValue = 3 % 3 = 0
+        // loop = 2 var specialValue = 5 % 5 = 0
+        // loop = 3 var specialValue = 15 % 15 = 0
+
+ function runTheNumbers(num1, num2){
+    let solution = document.getElementById("result")
+
     for (let loop = num1; loop <= num2; loop++) {
-     document.getElementById("result").innerText += loop;
+        let specialValue1 = loop % 3;
+        let specialValue2 = loop % 5;
+        // let specialValue3 = loop % 15;
+    if (specialValue1 == 0 && specialValue2 == 0) 
+    {
+         
+        solution.innerHTML = "FizzBuzz!";
+    }
+    else if (specialValue1 == 0)
+    {
+        solution.innerHTML = "Fizz!";
+    }
+    else if (specialValue2 = 0)
+    {
+        solution.innerHTML = "Buzz!";
+    }
+    else 
+    {
+        solution.innerHTML += loop;
     }
 }
+};
+
+
+
+//     //  Print out to the user the 
+//      document.getElementById("output1").innerHTML = "Fizz";
+//      document.getElementById("output2").innerHTML = "Buzz";
+//      document.getElementById("output3").innerHTML = "FizzBuzz";
+
 
 // The order you test MIGHT be very important
 // The premise of FizzBuzz is to take 2 user inputs and find all of their multiples between 1 and 100
-// If the loop count is a multiple of input 1 it is a Fizz case
-// if the loop count is a multiple of input 2 it is a Buzz case
+// If the loop count is a multiple of 3 it is a Fizz case
+// if the loop count is a multiple of 5 it is a Buzz case
 // If the loop count is a multiple of both input it is a FizzBuzz case
 
 
