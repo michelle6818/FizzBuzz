@@ -4,11 +4,14 @@
 
 .fizz {
     color: rgb(17, 92, 153);
+    font-weight:bold;
 }
 .buzz {
     color: rgb(153, 17, 40);
+    font-weight:bold;
 }
 
-.fizzbuzz {
-    color: rgb(83, 153, 17);
+.fizzBuzz {
+    color: rgb(15, 107, 50);
+    font-weight:bolder;
 }

@@ -21,19 +21,19 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     if (specialValue1 == 0 && specialValue2 == 0) 
     {
          
-        output += `<span class="fizzBuzz">FizzBuzz! </span>`;
+        output = `<span class="fizzBuzz">FizzBuzz! </span>`;
     }
     else if (specialValue1 == 0)
     {
-        output += `<span class= "fizz">Fizz! </span>`;
+        output = `<span class= "fizz">Fizz! </span>`;
     }
     else if (specialValue2 == 0)
     {
-        output += `<span class= "buzz">Buzz! </span>`;
+        output = `<span class= "buzz">Buzz! </span>`;
     }
     else 
     {
-        solution.innerHTML += loop;
+        output = `${loop}`;
     }
     solution.innerHTML += output;
     }
