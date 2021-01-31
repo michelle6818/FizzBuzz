@@ -1,19 +1,19 @@
-
 // This is an anonymous function to call a named function
 document.getElementById("fizzButton").addEventListener("click", function(){
     let num1 = document.getElementById("input1").value;
     let num2 = document.getElementById("input2").value;
         runTheNumbers(num1, num2);
 }) 
-
 // This is the named function, it will only run when something else calls it
         // loop = 1 var specialValue = 3 % 3 = 0
         // loop = 2 var specialValue = 5 % 5 = 0
         // loop = 3 var specialValue = 15 % 15 = 0
-
  function runTheNumbers(num1, num2){
-    let solution = document.getElementById("result")
     let output = "";
+    let resultBody = document.getElementById("resultBody");
+    let resultRow = "";
+    resultBody.innerHTML = "";
+
     for (let loop = num1; loop <= num2; loop++) {
         let specialValue1 = loop % 3;
         let specialValue2 = loop % 5;
@@ -35,14 +35,17 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     {
         output = `${loop}`;
     }
-    solution.innerHTML += output;
+
+    resultRow = `<tr><td>${output}</td></tr>`;
+    
+    resultBody.innerHTML += resultRow;  
     }
 };
-
+//reset button
 document.getElementById("btnClear").addEventListener("click", function(){
      document.getElementById("input1").value = "";
      document.getElementById("input2").value = "";
-     document.getElementById("result").innerText = "";
+     document.getElementById("resultBody").innerText = "";
 });
 
 

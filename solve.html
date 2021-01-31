@@ -38,15 +38,18 @@
           </div>
       </nav>
 
-      <div class="container pt-5">
-          <div class="row">
-              <div class="col form-group">
+      <div class="container text-center pt-5">
+          <p>Please enter two numbers.  FizzBuzz will then return a value of "Fizz" for numbers that are multiples of 3, "Buzz" for numbers that are multiples of 5, and "FizzBuzz" for numbers that are multiples of both.</h6>
+          <hr>
+            <div class="row">
+              <div class="col-3 offset-3">
                   <input class="form-control" id="input1" placeholder="First number" type="number" />
               </div>
-              <div class="col form-group">
+              <div class="col-3">
                  <input class="form-control" id="input2" placeholder="Second number" type="number" />
               </div>
           </div>
+          <br>
               <div class="row">
                   <div class="col-6 offset-3 form-group">
                       <button class="btn btn-primary btnWide" id="fizzButton">FizzBizz!</button>
@@ -54,12 +57,19 @@
                   <div class="col-6 offset-3 form-group">
                     <button id=btnClear class="btn-outline-primary btnWide">Clear</button>
                 </div>
-              </div>             
+              </div> 
+              <!--Add Table-->            
               <div class="row">
                   <div class="col">
-                      <p>FizzBuzz Results!</p>
-                      <hr />
-                      <p id="result"></p>
+                      <table id="fizzbuzzTable" class="table table-responsive-lg table-striped table-bordered mb-0 mt-3" tr style="background-color: lightblue strip">
+                      <thead id="tableheader">
+                          <tr>
+                              <th scope="col"><strong>FizzBuzz Results!</strong></th>
+                          </tr>
+                          </thead>
+                        <tbody id="resultBody">
+                        </tbody>
+                        </table>
                   </div>
               </div>
           </div>
