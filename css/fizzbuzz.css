@@ -15,3 +15,20 @@
     color: rgb(15, 107, 50);
     font-weight:bolder;
 }
+.fizzhead {
+    color: rgb(17, 92, 153);
+    font-weight:bold;
+}
+.buzzhead {
+    color: rgb(153, 17, 40);
+    font-weight:bold;
+}
+
+.fizzBuzzhead {
+    color: rgb(15, 107, 50);
+    font-weight:bold;
+}
+.FizzBuzz {
+    color: rgb(230, 94, 3);
+    font-weight:bolder;
+}
