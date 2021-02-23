@@ -32,7 +32,7 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     {
         output[loop] = `${loop}`;
     }
-
+    }
     for(let loop = 1; loop < 100; loop += 5)
     {
     resultRow += `<tr>
@@ -42,7 +42,7 @@ document.getElementById("fizzButton").addEventListener("click", function(){
     <td>${output[loop+3]}</td>
     <td>${output[loop+4]}</td></tr>`;
     }
-}
+
     resultBody.innerHTML += resultRow;  
     
 };
